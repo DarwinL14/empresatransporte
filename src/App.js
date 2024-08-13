@@ -1,14 +1,14 @@
 import { Fragment } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Index from "./pages/auth/Index";
 
 function App() {
   return (
+    
     <Fragment>
       <Router>
         <Routes>
-          <Route path='/' exact element = {<login/>}>
-
-          </Route>
+          <Route path='/' exact element = {<Index />}/>
         </Routes>
       </Router>
     </Fragment>    
