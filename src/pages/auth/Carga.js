@@ -4,7 +4,7 @@ const Carga = () => {
     return (
         <>
         <div>
-            <h3 class="text-center text-lg font-semibold m-2">Ingresa la carga para aconcejarte el mejor camion</h3>
+            <h3 class="text-center my-5 text-2xl font-bold tracking-tight text-gray-900">Ingresa la carga para aconcejarte el mejor camion</h3>
             <form class="flex items-center max-w-sm mx-auto m-2">
                 <label for="simple-search" class="sr-only">Search</label>
                 <div class="relative w-full">

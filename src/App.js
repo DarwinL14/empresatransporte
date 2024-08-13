@@ -20,7 +20,6 @@ function App() {
           <Route path='Camiones' element = {<Camiones />}/>
           <Route path='Carga' element = {<Carga />}/>
           <Route path='Camion1' element = {<Camion1 />}/>
-        
         </Routes> 
         <Footer />
       </Router>
