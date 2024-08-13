@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Index = () => {
+const Camiones = () => {
     return (
         <>
-        <section class=" place-content-center justify-items-center gap-8 mt-5 mb-5">
-            <h1 class="text-center mb-5 text-xl font-bold tracking-tight text-gray-900">Bienvenido a EmpresaTransporte</h1>
-            <p class="text-center mb-5 text-2xl font-bold tracking-tight text-gray-900">En nuestra pagina ud podra consultar, cargar y descargar nuestros diferentes camiones</p>
-            <div class="flex flex-row place-content-center place-items-center justify-items-center gap-10 mt-5 mb-5">
+        <section class="flex flex-row place-content-center justify-items-center gap-8 mt-5 mb-5">
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="rounded-t-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s" alt="" />
@@ -90,7 +87,6 @@ const Index = () => {
                         </a>
                     </div>
                 </div>
-            </div>
             
         </section>
 
@@ -99,4 +95,4 @@ const Index = () => {
 
     );
 };
-export default Index;
+export default Camiones;
