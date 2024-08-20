@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
-import Header from "./Header";
-const Index = () => {
+import Footer from "../Footer";
+import Header from "./Header2";
+const Index_e = () => {
     return (
         <>
         <Header/>
 
         <section class=" place-content-center justify-items-center gap-8 mt-5 mb-5">
             <h1 class="text-center mb-4 text-xl font-bold tracking-tight text-gray-900">Bienvenido a EmpresaTransporte</h1>
-            <p class="text-center mb-4 text-2xl font-bold tracking-tight text-gray-900">En nuestra pagina podras consultar, cargar y descargar nuestros diferentes camiones</p>
+            <p class="text-center mb-4 text-2xl font-bold tracking-tight text-gray-900">En nuestra pagina podras ver tus camiones y realizar entregas</p>
 
             <div id="default-carousel" class="relative w-9/12 mx-auto rounded-lg mb-5" data-carousel="slide">
                 
@@ -18,7 +18,7 @@ const Index = () => {
                     <div class=" duration-700 ease-in-out" data-carousel-item>
                         <img class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="https://thelogisticsworld.com/wp-content/uploads/2023/12/camion-de-carga-en-camino-de-terraceria.jpg" alt="..." />
                     </div>
-                
+                    
                 </div>
             
                 <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
@@ -47,13 +47,13 @@ const Index = () => {
                 </button>
             </div>
 
-            <p class="text-center mb-4 text-2xl font-bold tracking-tight text-gray-900">Puedes seleccionar la empresa de transporte de tu preferencia o ir directamente a consultar todos nuestros camiones</p>
+            <p class="text-center mb-4 text-2xl font-bold tracking-tight text-gray-900">Puedes seleccionar el camion de preferencia o ir directamente a la seccion de camiones</p>
 
             <div>
                 <form class="flex items-center max-w-sm mx-auto m-2">
                     <label for="simple-search" class="sr-only">Search</label>
                     <div class="relative w-full">
-                        <input type="text" id="simple-search" class="bg-gray border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar empresa" required />
+                        <input type="text" id="simple-search" class="bg-gray border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar Camion" required />
                     </div>
                     <button type="submit" class="p-2.5 ms-2 text-sm font-medium text-white bg-orange-600 rounded-lg border border-black hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-gray-500 ">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -71,7 +71,7 @@ const Index = () => {
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Cargocol</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Camion #1</h5>
                         </a>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Matricula:</p>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Capacidad de carga:</p>
@@ -92,7 +92,7 @@ const Index = () => {
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Ditransa</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Camion #2</h5>
                         </a>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Matricula:</p>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Capacidad de carga:</p>
@@ -113,7 +113,7 @@ const Index = () => {
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Empresa #3</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Camion #3</h5>
                         </a>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Matricula:</p>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Capacidad de carga:</p>
@@ -134,7 +134,7 @@ const Index = () => {
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Empresa #4</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Camion #4</h5>
                         </a>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Matricula:</p>
                         <p class="font-normal text-gray-700 dark:text-gray-400">Capacidad de carga:</p>
@@ -158,4 +158,4 @@ const Index = () => {
         
     );
 };
-export default Index;
+export default Index_e;

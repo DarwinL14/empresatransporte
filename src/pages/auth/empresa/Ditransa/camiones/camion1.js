@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Camion1 = () => {
+import Header from "../../../Header";
+import Footer from "../../../Footer";
+const Ditransa1 = () => {
     return (
         <>
+        <Header/>
+
         <section class="flex flex-col place-content-center place-items-center justify-items-center gap-10 mt-5 mb-5">
             
                 <div>
@@ -41,9 +45,10 @@ const Camion1 = () => {
 
         </section>
 
+        <Footer/>
         </>
 
 
     );
 };
-export default Camion1;
+export default Ditransa1;
