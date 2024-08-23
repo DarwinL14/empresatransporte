@@ -6,6 +6,8 @@ const Cargocol_1 = () => {
     return (
         <>
         <Header/>
+        <h3 class="text-center my-5 text-2xl font-bold tracking-tight text-gray-900"></h3>
+
         <section class="flex flex-row place-content-center place-items-center justify-items-center gap-10 mt-5 mb-5">
             <div class="flex flex-row gap-5">
                 <div class="text-center flex flex-col place-items-center rounded-lg ">

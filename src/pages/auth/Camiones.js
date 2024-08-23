@@ -24,7 +24,7 @@ const Camiones = () => {
             </form>
         </div>
 
-        <section class="flex flex-row place-content-center justify-items-center gap-8 mt-5 mb-5">
+        <section class="flex flex-row place-content-center justify-items-center gap-10 mt-5 mb-5">
                 <div class="max-w-sm bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="rounded-t-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s" alt="" />

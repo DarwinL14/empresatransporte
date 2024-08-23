@@ -11,7 +11,7 @@ const Header = () => {
                         <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M4 4a2 2 0 0 0-2 2v9a1 1 0 0 0 1 1h.535a3.5 3.5 0 1 0 6.93 0h3.07a3.5 3.5 0 1 0 6.93 0H21a1 1 0 0 0 1-1v-4a.999.999 0 0 0-.106-.447l-2-4A1 1 0 0 0 19 6h-5a2 2 0 0 0-2-2H4Zm14.192 11.59.016.02a1.5 1.5 0 1 1-.016-.021Zm-10 0 .016.02a1.5 1.5 0 1 1-.016-.021Zm5.806-5.572v-2.02h4.396l1 2.02h-5.396Z" clip-rule="evenodd"/>
                         </svg>
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EmpresaTransporte</span>
+                        <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-gray-700">EmpresaTransporte</span>
                     </a>
 
                     <div class="flex items-center lg:order-2">
@@ -25,16 +25,16 @@ const Header = () => {
                     <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul class="flex flex-col mt-2 mb-2 mr-56 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <a href="Index" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                                <a href="Index" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Home</a>
                             </li>
                             <li>
-                                <a href="Empresas" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Empresas</a>
+                                <a href="Empresas" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Empresas</a>
                             </li>
                             <li>
-                                <a href="Camiones" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Camiones</a>
+                                <a href="Camiones" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Camiones</a>
                             </li>
                             <li>
-                                <a href="Carga" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Cargar</a>
+                                <a href="Carga" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Cargar</a>
                             </li>
                         </ul>
                     </div>
