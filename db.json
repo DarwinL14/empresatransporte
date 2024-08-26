@@ -1,0 +1,75 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Darwin",
+      "correo": "d@gmail.com",
+      "contrasena": "1234",
+      "rol": "cliente"
+    },
+    {
+      "id": "2",
+      "nombre": "Murcia",
+      "correo": "m@gmail.com",
+      "contrasena": "123",
+      "rol": "cliente"
+    },
+    {
+      "id": "5f38",
+      "nombre": "empresa2",
+      "correo": "m@gmail.com",
+      "contrasena": "19821",
+      "rol": "empresa"
+    },
+    {
+      "id": "49ff",
+      "nombre": "empresa1",
+      "correo": "em@gmail.com",
+      "contrasena": "col",
+      "rol": "empresa"
+    }
+  ],
+  "camiones": [
+    {
+      "id": "11a0",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s",
+      "nombre": "camion1",
+      "matricula": "uuu111",
+      "capacidad": "100",
+      "carga": 0,
+      "gasolina": "5",
+      "estado": "libre",
+      "empresa": ""
+    },
+    {
+      "id": "914b",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s",
+      "nombre": "camion2",
+      "matricula": "aaa222",
+      "capacidad": "120",
+      "carga": 100,
+      "gasolina": "8",
+      "estado": "libre"
+    },
+    {
+      "id": "60b1",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s",
+      "nombre": "camion3",
+      "matricula": "eee333",
+      "capacidad": "80",
+      "carga": "0",
+      "gasolina": "10",
+      "estado": "libre"
+    },
+    {
+      "id": "4f92",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s",
+      "nombre": "camion4",
+      "matricula": "fff444",
+      "capacidad": "100",
+      "carga": "0",
+      "gasolina": "7",
+      "estado": "libre"
+    }
+  ]
+}

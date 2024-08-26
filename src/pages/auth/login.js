@@ -1,6 +1,54 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+
+    const [formData, setFormData] = useState({
+        correo: '',
+        contrasena: ''
+    });
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {            
+            const response = await axios.get('http://localhost:4000/usuarios', {
+                params: {
+                    correo: formData.correo,
+                    contrasena: formData.contrasena
+                }
+        });
+        
+        const usuarios = response.data[0];
+        if (usuarios) {
+            
+            localStorage.setItem('id', usuarios.id); 
+            localStorage.setItem('rol', usuarios.rol);
+            localStorage.setItem('nombre', usuarios.nombre); 
+            
+            if (usuarios.rol === 'cliente') {
+                alert("Ingreso exitoso");
+                navigate('/Index');
+            } else if (usuarios.rol === 'empresa') {
+                alert("Ingreso exitoso");
+                navigate('/Index_e');
+            }
+            window.location.reload();
+        } else {
+            setError('Correo o contraseña incorrectos. Inténtalo de nuevo.');
+        }
+    } catch (error) {
+        console.error('Error al iniciar sesión', error);
+        setError('Ocurrió un error al intentar iniciar sesión.');
+    }
+}
+
+
     return (
         <section className="bg-gray-900">
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -16,22 +64,39 @@ const Login = () => {
                 <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
-                    Iniciar Sesion
+                    Iniciar Sesion - cliente
                     </h1>
-                    <form className="space-y-4 md:space-y-6" action="#">
+                    {error && <p className="text-red-500">{error}</p>}
+                    <form className="space-y-4 md:space-y-6" action="#"  onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900"> Correo electronico</label>
-                        <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+                        <label htmlFor="correo" className="block mb-2 text-sm font-medium text-gray-900"> Correo electronico</label>
+                        <input 
+                            type="email" 
+                            name="correo" 
+                            id="correo" 
+                            className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" 
+                            placeholder="name@company.com" 
+                            required 
+                            value={formData.correo}
+                            onChange={handleChange}/>
                     </div>
                     <div>
-                        <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900">Contraseña</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                        <label htmlFor="contrasena" className="block mb-2 text-sm font-medium text-gray-900">Contraseña</label>
+                        <input 
+                            type="password" 
+                            name="contrasena" 
+                            id="contrasena" 
+                            placeholder="••••••••" 
+                            className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                            required 
+                            value={formData.contrasena}
+                            onChange={handleChange}/>
                     </div>
                     <div>
-                        <a href="Registro" class="font-bold text-black hover:text-orange-600">Registrarse</a>
+                        <a href="/Registro" class="font-bold text-black hover:text-orange-600">Registrarse</a>
                     </div>
 
-                    <button type="submit" class="w-full text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Sign in</button>
+                    <button type="submit" class="w-full text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Ingresar</button>
                     </form>
                 </div>
                 </div>
