@@ -19,7 +19,7 @@ const Registro = () =>{
   const enviar = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:4000/usuarios", formData);
+      const response = await axios.post("http://localhost:1000/usuarios", formData);
       alert("Registo exitoso", response.data);
       window.location.href = '/'; 
       

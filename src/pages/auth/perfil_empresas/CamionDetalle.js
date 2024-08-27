@@ -13,7 +13,7 @@ const CamionDetalle = () => {
     useEffect(() => {
         const obtenerCamion = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/camiones/${id}`);
+                const response = await axios.get(`http://localhost:1000/camiones/${id}`);
                 setCamion(response.data);
             } catch (error) {
                 console.error("Error al obtener los detalles del camión:", error);

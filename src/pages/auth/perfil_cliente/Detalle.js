@@ -14,7 +14,7 @@ const Detalle = () => {
     useEffect(() => {
         const obtenerCamion = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/camiones/${id}`);
+                const response = await axios.get(`http://localhost:1000/camiones/${id}`);
                 setCamion(response.data);
             } catch (error) {
                 console.error("Error al obtener los detalles del camión:", error);
@@ -43,7 +43,7 @@ const Detalle = () => {
             const nuevoEstado = cargaNumerica > 0 ? 'ocupado' : 'libre';
 
             // Actualizamos solo el valor de la carga y el estado
-            await axios.put(`http://localhost:4000/camiones/${id}`, {
+            await axios.put(`http://localhost:1000/camiones/${id}`, {
                 ...camion,  // Mantenemos todos los atributos actuales
                 carga: cargaNumerica, // Actualizamos la carga
                 estado: nuevoEstado // Cambiamos el estado

@@ -47,7 +47,7 @@
       "nombre": "camion2",
       "matricula": "aaa222",
       "capacidad": "120",
-      "carga": 100,
+      "carga": 0,
       "gasolina": "8",
       "estado": "libre"
     },

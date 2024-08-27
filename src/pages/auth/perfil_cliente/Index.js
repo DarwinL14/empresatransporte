@@ -12,7 +12,7 @@ const Index = () => {
     useEffect(() => {
         const obtenerCamiones = async () => {
             try {
-                const response = await axios.get("http://localhost:4000/camiones"); // Ajusta la URL según tu API
+                const response = await axios.get("http://localhost:1000/camiones"); // Ajusta la URL según tu API
                 setCamiones(response.data); // Guarda los datos en el estado
             } catch (error) {
                 console.error('Error al obtener los camiones:', error);
@@ -70,7 +70,7 @@ const Index = () => {
                         <div key={camion.id} className="max-w-sm bg-white rounded-lg shadow-lg">
                             <img className="rounded-t-lg" src={camion.imagen || 'https://via.placeholder.com/150'} alt={camion.nombre} />
                             <div className="p-5">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                                     {camion.nombre}
                                 </h5>
                                 <p className="font-normal text-gray-700"><strong>Matrícula:</strong> {camion.matricula}</p>

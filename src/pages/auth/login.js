@@ -17,7 +17,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {            
-            const response = await axios.get('http://localhost:4000/usuarios', {
+            const response = await axios.get('http://localhost:1000/usuarios', {
                 params: {
                     correo: formData.correo,
                     contrasena: formData.contrasena

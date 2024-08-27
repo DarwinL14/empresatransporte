@@ -21,7 +21,7 @@ const Camiones_e = () => {
       const enviar = async (event) => {
         event.preventDefault();
         try {
-          const response = await axios.post("http://localhost:4000/camiones", formData);
+          const response = await axios.post("http://localhost:1000/camiones", formData);
           alert("Registo exitoso", response.data);
           window.location.href = '/Camiones_e'; 
           
