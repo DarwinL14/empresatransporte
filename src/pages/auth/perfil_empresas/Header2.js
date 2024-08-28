@@ -25,7 +25,7 @@ const Header2 = () => {
                     <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul class="flex flex-col mt-2 mb-2 mr-56 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <a href="/Index_e" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Home</a>
+                                <a href="/Index_e" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Inicio</a>
                             </li>
                             <li>
                                 <a href="/Camiones_e" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 hover:bg-transparent hover:text-white">Camiones</a>

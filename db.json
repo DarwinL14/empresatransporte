@@ -3,22 +3,15 @@
     {
       "id": "1",
       "nombre": "Darwin",
-      "correo": "d@gmail.com",
+      "correo": "cliente@gmail.com",
       "contrasena": "1234",
-      "rol": "cliente"
-    },
-    {
-      "id": "2",
-      "nombre": "Murcia",
-      "correo": "m@gmail.com",
-      "contrasena": "123",
       "rol": "cliente"
     },
     {
       "id": "5f38",
       "nombre": "empresa2",
-      "correo": "m@gmail.com",
-      "contrasena": "19821",
+      "correo": "empresa@gmail.com",
+      "contrasena": "1234",
       "rol": "empresa"
     },
     {
@@ -70,6 +63,27 @@
       "carga": "0",
       "gasolina": "7",
       "estado": "libre"
+    },
+    {
+      "id": "b550",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s",
+      "nombre": "camion5",
+      "matricula": "ppp123",
+      "capacidad": "1000",
+      "carga": "0",
+      "gasolina": "6",
+      "estado": "libre"
+    },
+    {
+      "id": "c8ef",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwDDTPLpAyN_fFBikf6bf80Y_qb7p50A9cA&s",
+      "nombre": "camion6",
+      "matricula": "mmm111",
+      "capacidad": "2000",
+      "carga": "0",
+      "gasolina": "10",
+      "estado": "libre",
+      "empresa": ""
     }
   ]
 }
