@@ -20,6 +20,20 @@
       "correo": "em@gmail.com",
       "contrasena": "col",
       "rol": "empresa"
+    },
+    {
+      "id": "00bb",
+      "nombre": "cliente2",
+      "correo": "cliente2@gmail.com",
+      "contrasena": "1234",
+      "rol": "cliente"
+    },
+    {
+      "id": "51b5",
+      "nombre": "empresa3",
+      "correo": "empresa3@gmail.com",
+      "contrasena": "1234",
+      "rol": "empresa"
     }
   ],
   "camiones": [

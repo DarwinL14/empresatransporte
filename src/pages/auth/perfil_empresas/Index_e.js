@@ -64,7 +64,7 @@ const Index_e = () => {
                         <div key={camion.id} className="max-w-sm bg-white rounded-lg shadow-lg">
                             <img className="rounded-t-lg" src={camion.imagen || 'https://via.placeholder.com/150'} alt={camion.nombre} />
                             <div className="p-5">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                                     {camion.nombre}
                                 </h5>
                                 <p className="font-normal text-gray-700"><strong>Matrícula:</strong> {camion.matricula}</p>
